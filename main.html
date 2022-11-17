@@ -40,7 +40,7 @@
 
     <h2>CPSC 254 CSUF Map</h2>
 
-<div id="map" style="width: 800px; height: 900px;"></div>
+<div id="map" style="width: 50%; height: 90%;"></div>
 <script>
 
 	var map = L.map('map').setView([33.8823, -117.8851], 17);
@@ -49,6 +49,72 @@
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
+
+	var popup = L.popup();
+
+	/*function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+	}
+
+	map.on('click', onMapClick);*/
+
+	function highlightFeature(e) {
+		var layer = e.target;
+		layer.setStyle({
+			weight: 5,
+			color: '#666',
+    	    dashArray: '',
+    	    fillOpacity: 0.7
+		});
+		layer.bringToFront();
+	}
+
+	var MH = L.polygon([
+    [33.879859, -117.885987],
+	[33.879873, -117.885067],
+    [33.879481, -117.885059],
+	[33.879467, -117.885982]
+	]).addTo(map)
+	.bindPopup("<b>MH</b><br />McCarthy Hall");
+
+	var PL = L.polygon([
+    [33.88211, -117.885685],
+	[33.882111, -117.885113],
+    [33.880904, -117.885054],
+	[33.880901, -117.885705]
+	]).addTo(map)
+	.bindPopup("<b>PL</b><br />Pollak Library<br>Starbucks");
+
+	let isClicked = false
+
+MH.on({
+    mouseover: function() {
+        if(!isClicked) {
+            this.openPopup()
+        }
+    },
+    mouseout: function() { 
+        if(!isClicked) {
+            this.closePopup()
+        }
+    },
+    click: function() {
+        isClicked = true
+        this.openPopup()
+    }
+})
+
+mymap.on ({
+    click: function() {
+        isClicked = false
+    },
+    popupclose: function () {
+        isClicked = false
+    }
+})
 
 </script>
 
