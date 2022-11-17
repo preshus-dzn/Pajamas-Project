@@ -1,0 +1,74 @@
+.table {
+  /* font-family: 'Avenir'; */
+  font-family: 'Arial';
+  src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf')  format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table th {
+  text-align: left;
+  border-top: 2px solid #36393E;
+  border-bottom: 2px solid #36393E;
+  color: black;
+}
+
+.table tr{
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 1px solid #141516;
+
+}
+.table td{
+  padding: 8px;
+  color: black;
+}
+
+body {background-color: white;}
+img {
+  width: 100px;
+  height: 100px;
+  vertical-align: -5px;
+  margin-right: 9px;
+ }
+ .img2 {
+  width: 15px;
+  height: 15px;
+  margin-left: 3px;
+  vertical-align: 3px;
+  vertical-align: -1px;
+ }
+ .img3  {
+  width: 25px;
+  height: 25px;
+ }
+ p {
+  font-size: 14px;
+  vertical-align: top ;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+.food-search {
+  padding: 20px;
+}
+
+.food-search input[type=text],
+.food-search input[type=number] {
+  font-size: 12pt;
+  padding: 3px;
+  line-height: 1.0;
+}
+
+.food-search button {
+  line-height: 1.0;
+  padding: 6px 30px;
+  height: auto !important;
+  font-size: 13pt;
+  color: white;
+  border: none;
+  background-color: #FC6A00;
+  cursor: pointer;
+  margin-top: -2px;
+}
