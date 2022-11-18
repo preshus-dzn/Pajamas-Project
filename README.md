@@ -13,7 +13,7 @@ JAVASCRIPT, HTML, CCS, YELP API
 ## How to use our program
 1. If you are Linux user, you can use Terminal to clone the github repository to your device use 'git clone https://github.com/SacredAntwon/Untitled-Group-AutoBlogger.git'
 
-If you are Windows and MacOS user, you should install 'Git Terminal(https://git-scm.com/downloads)' first. After you install Git, you can clone it use same command line above.
+  If you are Windows and MacOS user, you should install 'Git Terminal(https://git-scm.com/downloads)' first. After you install Git, you can clone it use same command line above.
 
 2. After the repository cloned to your device, open the 'Pajamas-Project' folder, double click `main.html`, you can view the map of CSUF campus on the homepage.
 
