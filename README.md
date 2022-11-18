@@ -11,7 +11,7 @@ The users to be able to view different points of interest such as the various sc
 JAVASCRIPT, HTML, CCS, YELP API
 
 ## How to use our program
-1. If you are Linux user, you can use Terminal to clone the github repository to your device use `git clone https://github.com/SacredAntwon/Untitled-Group-AutoBlogger.git'`.
+1. If you are Linux user, you can use Terminal to clone the github repository to your device use `git clone https://github.com/preshus-dzn/Pajamas-Project.git`.
 
 2. If you are Windows and MacOS user, you should install 'Git Terminal(https://git-scm.com/downloads)' first. After you install Git, you can clone it use same command line above.
 
