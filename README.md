@@ -8,7 +8,7 @@ The users to be able to view different points of interest such as the various sc
 * Site Wei sitew@csu.fullerton.edu
 
 ## Coding Language and reference
-JAVASCRIPT, HTML, CCS, YELP API
+JAVASCRIPT, HTML, CCS, LeafletJS, YELP API
 
 ## How to use our program
 1. If you are Linux user, you can use Terminal to clone the github repository to your device use `git clone https://github.com/preshus-dzn/Pajamas-Project.git`.
