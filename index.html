@@ -1,134 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ticket Comp website</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-      
-    />
-    <script src="jquery.js"></script>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <!--Navbar Section-->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="index.html" id="navbar__logo">Ticket Comp</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
-          <li class="navbar__btn"><a href="logsin.html" class="button">Sign up</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!--End of Navbar Section-->
 
-    <!--Hero Section-->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>Lowest Price</h1>
-          <h2>Guaranteed</h2>
-          <p>Search for events now</p>          
-          <!--<button class="main__button"><a href="secPage.html">Search</a></button>-->
-          <div class="searchbar__container">
-            <form action="" class="searchbar__form">
-              <input type="search" placeholder="Search Events" name="q" id="search" data-search>
-              <button type="submit"><img src="./images/search.png"></button>
-            </form>
-          </div>
-        </div>
-        <div class="main__img--container">
-          <img
-            src="images/pic1.jpg"
-            alt="pic"
-            id="main__img"
-            width="400"
-            height="300"
-          />            
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Comp website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="jquery.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!--Navbar Section-->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">Ticket Comp</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+        <li class="navbar__btn"><a href="logsin.html" class="button">Sign up</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--End of Navbar Section-->
+
+  <!--Hero Section-->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>Lowest Price</h1>
+        <h2>Guaranteed</h2>
+        <p>Search for events now</p>
+        <!--<button class="main__button"><a href="secPage.html">Search</a></button>-->
+        <div class="searchbar__container">
+          <form action="" class="searchbar__form">
+            <input type="search" placeholder="Search Events" name="q" id="search" data-search>
+            <button type="submit"><img src="./images/search.png"></button>
+          </form>
         </div>
       </div>
-      <div class="events-cards" data-events-cards-container> </div>
-      <template data-events-template>
-          <div class="card">
-              <div class="body">Ticketmaster</div>
-              <div class="header" data-header></div>
-              <div class="body" data-body></div>
-              <div class="body" data-body2></div>
-          </div>
-      </template>
-      <div class="events-cards" data-events-cards-container2> </div>
-      <template data-events-template2>
-        <div class="card">
-            <div class="body">SeatGeek</div>
-            <div class="header" data-header></div>
-            <div class="body" data-body></div>
-            <div class="body" data-body2></div>
+      <div class="main__img--container">
+        <img src="images/pic1.jpg" alt="pic" id="main__img" width="400" height="300" />
+      </div>
+    </div>
+    <div class="events-cards" data-events-cards-container> </div>
+    <template data-events-template>
+      <div class="card">
+        <div class="body">Ticketmaster</div>
+        <div class="header" data-header></div>
+        <div class="body" data-body></div>
+        <div class="body" data-body2></div>
+      </div>
+    </template>
+    <div class="events-cards" data-events-cards-container2> </div>
+    <template data-events-template2>
+      <div class="card">
+        <div class="body">SeatGeek</div>
+        <div class="header" data-header></div>
+        <div class="body" data-body></div>
+        <div class="body" data-body2></div>
+      </div>
+    </template>
+  </div>
+  <!--End of Hero Section-->
+  <!-- Services Section-->
+  <div class="services">
+    <h1>Nearest Events</h1>
+    <div class="services__container">
+      <div class="services__card">
+        <img src="./images/pic2.jpg" alt="pic" id="main__img" width="400" height="300" />
+        <h2>Lakers</h2>
+        <p>POR Trail Blazers v. LA Lakers @Crypto.com arena</p>
+        <button>Get Tickets</button>
+      </div>
+      <div class="services__card">
+        <img src="./images/pic3.jpg" alt="pic" id="main__img" width="400" height="300" />
+        <h2>Taylor Swift</h2>
+        <p>T. Swift @ Sofi Stadium</p>
+        <button>Get Tickets</button>
+      </div>
+    </div>
+  </div>
+  <!-- End of Services Section-->
+  <!-- Footer Section-->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>About Us</h2>
+          <a href="/">How it Works</a>
+          <a href="/">Testimonials</a>
+          <a href="/">Careers</a>
+          <a href="/">Investments</a>
+          <a href="/">Terms of Services</a>
         </div>
-      </template>
-    </div>            
-    <!--End of Hero Section-->
-    <!-- Services Section-->
-    <div class="services">
-      <h1>Nearest Events</h1>
-      <div class="services__container">
-        <div class="services__card">
-          <h2>Lakers</h2>
-          <p>POR Trail Blazers v. LA Lakers @Crypto.com arena</p>
-          <button>Get Tickets</button>
+        <div class="footer__link--items">
+          <h2>Contact Us</h2>
+          <a href="/">Contact</a>
+          <a href="/">Support</a>
+          <a href="/">Destinations</a>
+          <a href="/">Sponsorships</a>
         </div>
-        <div class="services__card">
-          <h2>Taylor Swift</h2>
-          <p>T. Swift @ Sofi Stadium</p>
-          <button>Get Tickets</button>
+        <div class="footer__link--items">
+          <h2>Social Media</h2>
+          <a href="/">Instagram</a>
+          <a href="/">Facebook</a>
+          <a href="/">YouTube</a>
+          <a href="/">Twitter</a>
         </div>
       </div>
     </div>
-    <!-- End of Services Section-->
-    <!-- Footer Section-->
-    <div class="footer__container">
-      <div class="footer__links">
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>About Us</h2>
-            <a href="/">How it Works</a>
-            <a href="/">Testimonials</a>
-            <a href="/">Careers</a>
-            <a href="/">Investments</a>
-            <a href="/">Terms of Services</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Contact Us</h2>
-            <a href="/">Contact</a>
-            <a href="/">Support</a>
-            <a href="/">Destinations</a>
-            <a href="/">Sponsorships</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Social Media</h2>
-            <a href="/">Instagram</a>
-            <a href="/">Facebook</a>
-            <a href="/">YouTube</a>
-            <a href="/">Twitter</a>
-          </div>
-        </div>
-      </div>
-      <!--Social Media Class goes here-->
-    </div>
-    <!-- End of Footer Section-->
+    <!--Social Media Class goes here-->
+  </div>
+  <!-- End of Footer Section-->
 
-    <script>
-      src = "app.js";
-    </script>
-  </body>
+  <script>
+    src = "app.js";
+  </script>
+</body>
+
 </html>
